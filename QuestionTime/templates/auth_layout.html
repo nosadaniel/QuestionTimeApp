@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% load static%} {% block style %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% endblock %} {% block content %}
+<div class="container outer-area">
+  <div class="auth-box text-center">
+    {% block auth %} {% endblock %}
+  </div>
+</div>
+{% endblock %}
