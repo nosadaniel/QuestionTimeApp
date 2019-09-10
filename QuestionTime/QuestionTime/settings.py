@@ -143,6 +143,14 @@ LOGOUT_REDIRECT_URL = "/"
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "frontend/dist")
+]
+
+#STATIC_ROOT = ""# The absolute path to the directory where collectstatic will
+#collect static files for deployment.
+
 #custom user model
 AUTH_USER_MODEL = "users.CustomUser"
 
